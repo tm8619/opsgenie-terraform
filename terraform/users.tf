@@ -5,7 +5,7 @@ resource "opsgenie_user" "test_user" {
   timezone  = "Asia/Tokyo"
 }
 
-resource "opsgenie_user" "admin_user" {
+resource "opsgenie_user" "test_admin_user" {
   username  = "admin@domain.com"
   full_name = "admin"
   role      = "Admin"
