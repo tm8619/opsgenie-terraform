@@ -1,6 +1,6 @@
 /*
 │ Error: Error occurred with Status code: 422, Message: Escalation rules are not valid for current plan, please consider upgrading to a plan with Enhanced Escalations.
-無料プランでは使用できない
+無料プランではnotify_type = "next"が使用できなさそう
 
 resource "opsgenie_escalation" "default" {
   name          = "sample_escalation"
@@ -52,7 +52,7 @@ resource "opsgenie_escalation" "default" {
   rules {
     condition   = "if-not-acked"
     notify_type = "default"
-    delay       = 1
+    delay       = 0
 
     recipient {
       type = "schedule"
