@@ -3,3 +3,7 @@ provider "opsgenie" {
   api_key = var.opsgenie_api_key
   api_url = "api.opsgenie.com"
 }
+
+variable "opsgenie_api_key" {
+  type = string
+}
