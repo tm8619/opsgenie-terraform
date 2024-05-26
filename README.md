@@ -16,6 +16,10 @@ apply の為には、APIKey に権限をフルで付ける必要がある
   - set を対応させる
   - opsgenie_team_member みたいなリソースを作る
 
+## 制約で出来ていないこと
+
+- 無料プランだと escalation の細かいルールが作れず動作確認できなかったので、基本的なもののみ
+
 ## 今後
 
 module 使って、user/team/schedules あたりを一元管理できるようにしたい
