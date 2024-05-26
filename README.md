@@ -13,8 +13,11 @@ apply の為には、APIKey に権限をフルで付ける必要がある
 ## 悩みポイント
 
 - team の member が id の昇順に並び替えないと差分になってしまう。そのため、 member の id を参照でやると後で直さないといけない。恐らく対応は以下のどちらか
+
   - set を対応させる
   - opsgenie_team_member みたいなリソースを作る
+
+- integration で発行された API Key が tfstate に乗ってくるので、tfstate を github に上げる運用だと厳しい。
 
 ## 制約で出来ていないこと
 
