@@ -1,6 +1,7 @@
 /*
 │ Error: Error occurred with Status code: 422, Message: Escalation rules are not valid for current plan, please consider upgrading to a plan with Enhanced Escalations.
 無料プランではnotify_type = "next"が使用できなさそう
+https://support.atlassian.com/opsgenie/docs/how-do-escalations-work-in-opsgenie
 
 resource "opsgenie_escalation" "default" {
   name          = "sample_escalation"
