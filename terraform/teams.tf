@@ -3,13 +3,12 @@ resource "opsgenie_team" "sample_team" {
   description = "sample team managed by terraform"
 
   member {
-    id   = "${opsgenie_user.test_admin_user.id}"
-    role = "admin"
-  }
-
-  member {
     id   = "${opsgenie_user.test_user.id}"
     role = "user"
+  }
+  member {
+    id   = "${opsgenie_user.test_admin_user.id}"
+    role = "admin"
   }
 }
 
