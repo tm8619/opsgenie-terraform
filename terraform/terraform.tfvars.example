@@ -1,0 +1,2 @@
+# Please fill below and rename this file to terraform.tfvars.
+opsgenie_api_key = "api_key"
